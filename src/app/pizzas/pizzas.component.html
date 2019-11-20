@@ -1,0 +1,11 @@
+<div *ngFor="let pizza of datos; index as i">
+    <h5 class="card-title">{{pizza.id}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{pizza.shape_id}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{pizza.sauce_id}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{pizza.flavor_id}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{pizza.size_id}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{pizza.user_id}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{pizza.total_prices}}</h6>
+    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    <button (click)="eliminarPizza(i)">Eliminar pizza</button>
+</div>

@@ -1,0 +1,23 @@
+<h1>Agregar Pizza</h1>
+<table>
+    <tbody>
+        <tr>
+            <td>Shape_id</td>
+            <td>Sauce_id</td>
+            <td>Flavor_id</td>
+            <td>Size_id</td>
+            <td>User_id</td>
+            <td>Total_Prices</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="shape_id"></td>
+            <td> <input type="text" [(ngModel)]="sauce_id"></td>
+            <td> <input type="text" [(ngModel)]="flavor_id"></td>
+            <td><input type="text" [(ngModel)]="size_id"></td>
+            <td> <input type="text" [(ngModel)]="user_id"></td>
+            <td> <input type="text" [(ngModel)]="total_prices"></td>
+            <td><a routerLink="/pizzas" routerLinkActive="active"><input type="button" (click)="crearPizzas()" value="Agregar Pizza"></a></td>
+        </tr>
+    </tbody>
+</table>

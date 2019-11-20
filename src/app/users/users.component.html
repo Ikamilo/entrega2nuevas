@@ -1,0 +1,5 @@
+<div *ngFor="let user of datos; index as i">
+    <h5>{{user.name}}</h5>
+    <h6>{{user.id}}</h6>
+    <button (click)="eliminarUsuario(i)">Eliminar Usuario</button>
+</div>

@@ -1,0 +1,16 @@
+<h1>Agregar Forma</h1>
+<table>
+    <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td>Precio</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="nombre"></td>
+            <td> <input type="text" [(ngModel)]="precio"></td>
+            <td><a routerLink="/shapes" routerLinkActive="active"><input type="button" (click)="crearForma()" value="Agregar Forma"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>

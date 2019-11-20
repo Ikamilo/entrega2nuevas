@@ -1,0 +1,6 @@
+<div class="col-sm-4" *ngFor="let flavor of datos; index as i">
+    <h5 class="card-title">{{flavor.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{flavor.price}}</h6>
+    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    <button (click)="eliminarSabor(i)">Eliminar sabor</button>
+</div>

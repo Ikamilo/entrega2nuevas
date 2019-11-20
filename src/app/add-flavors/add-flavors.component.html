@@ -1,0 +1,15 @@
+<h1>Agregar Sabor</h1>
+<table>
+    <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td>Precio</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="nombre"></td>
+            <td> <input type="text" [(ngModel)]="precio"></td>
+            <td><a routerLink="/flavors" routerLinkActive="active"><input type="button" (click)="crearSabor()" value="Agregar Sabor"></a></td>
+        </tr>
+    </tbody>
+</table>

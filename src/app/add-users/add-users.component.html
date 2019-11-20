@@ -1,0 +1,18 @@
+<h1>Agregar usuarios</h1>
+<table>
+    <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td>Email</td>
+            <td>Password</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="this.nombre"></td>
+            <td> <input type="text" [(ngModel)]="this.email"></td>
+            <td> <input type="text" [(ngModel)]="this.password"></td>
+            <td><a routerLink="/users" routerLinkActive="active"><input type="button" (click)="crearUsuarios()" value="Agregar Usuario"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>

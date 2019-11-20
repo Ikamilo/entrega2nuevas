@@ -1,0 +1,15 @@
+<h1>Agregar Tamaños</h1>
+<table>
+    <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td>Precio</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="nombre"></td>
+            <td> <input type="text" [(ngModel)]="precio"></td>
+            <td><a routerLink="/sizes" routerLinkActive="active"><input type="button" (click)="crearTamano()" value="Agregar Tamaño"></a></td>
+        </tr>
+    </tbody>
+</table>

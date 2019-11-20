@@ -1,0 +1,5 @@
+<div *ngFor="let size of datos; index as i">
+    <h5 class="card-title">{{size.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{size.price}}</h6>
+    <button (click)="eliminarTamano(i)">Eliminar tamaño</button>
+</div>

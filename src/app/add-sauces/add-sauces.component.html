@@ -1,0 +1,16 @@
+<h1>Agregar Salsa</h1>
+<table class="table">
+    <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td>Precio</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="nombre"></td>
+            <td> <input type="text" [(ngModel)]="precio"></td>
+            <td><a routerLink="/sauces" routerLinkActive="active"><input type="button" (click)="crearSalsa()" value="Agregar Salsa"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
