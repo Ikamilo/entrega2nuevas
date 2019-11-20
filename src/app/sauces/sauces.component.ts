@@ -18,7 +18,6 @@ export class SaucesComponent implements OnInit {
   Sauces(){
     this.servicio.getSauce().subscribe( (data:any)=>{
       this.datos = data;
-      console.log(this.datos[0].id);
     }, ( errorServicio )=> {
       console.log(errorServicio);
     });

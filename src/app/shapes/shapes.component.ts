@@ -18,7 +18,6 @@ export class ShapesComponent implements OnInit {
   shapes(){
     this.servicio.getShape().subscribe( (data:any)=>{
       this.datos = data;
-      console.log(this.datos[0].id);
     }, ( errorServicio )=> {
       console.log(errorServicio);
     });

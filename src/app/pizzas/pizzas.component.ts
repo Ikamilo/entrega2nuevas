@@ -18,7 +18,6 @@ export class PizzasComponent implements OnInit {
   pizzas(){
     this.servicio.getPizza().subscribe( (data:any)=>{
       this.datos = data;
-      console.log(this.datos[0].id);
     }, ( errorServicio )=> {
       console.log(errorServicio);
     });

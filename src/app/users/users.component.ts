@@ -19,7 +19,6 @@ export class UsersComponent implements OnInit {
   User(){
     this.servicio.getUser().subscribe( (data:any)=>{
       this.datos = data;
-      console.log(this.datos[0].id);
     }, ( errorServicio )=> {
       console.log(errorServicio);
     });
