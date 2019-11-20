@@ -22,7 +22,7 @@ const path = require('path');
 
 app.use(express.static(__dirname + '/dist'));
 app.listen(process.env.PORT || 8080);
-
+/
 //PATH LOCATION STARTEGY
 
 app.get('/*', function(req,res){
