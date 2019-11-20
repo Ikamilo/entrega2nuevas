@@ -22,98 +22,98 @@ export class PizzasServicesService {
   constructor(private http:HttpClient) { }
 
   getQuery( query:string ){
-    const url = `http://localhost:3000/${ query }`;
+    const url = `https://calm-mountain-38787.herokuapp.com/${ query }`;
     return this.http.get(url);
   }
 
   postPizza(shape_id:number,sauce_id:number,flavor_id:number,size_id:number,user_id:number,total_price:number){
     this.pizza = {shape_id:shape_id,sauce_id:sauce_id,flavor_id:flavor_id,size_id:size_id,user_id:user_id,total_price:total_price};
-    const url = `http://localhost:3000/pizzas`;
+    const url = `https://calm-mountain-38787.herokuapp.com/pizzas`;
     return this.http.post(url,this.pizza);
   }
 
   postShape(name:string,price:number){
     this.shape = {name:name,price:price};
-    const url = `http://localhost:3000/shapes`;
+    const url = `https://calm-mountain-38787.herokuapp.com/shapes`;
     return this.http.post(url,this.shape);
   }
 
   postSauce(name:string,price:number){
     this.sauce = {name:name,price:price};
-    const url = `http://localhost:3000/sauces`;
+    const url = `https://calm-mountain-38787.herokuapp.com/sauces`;
     return this.http.post(url,this.sauce);
   }
   
   postFlavor(name:string,price:number){
     this.flavor = {name:name,price:price};
-    const url = `http://localhost:3000/flavors`;
+    const url = `https://calm-mountain-38787.herokuapp.com/flavors`;
     return this.http.post(url,this.flavor);
   }
 
   postSize(name:string,price:number){
     this.size = {name:name,price:price};
-    const url = `http://localhost:3000/sizes`;
+    const url = `https://calm-mountain-38787.herokuapp.com/sizes`;
     return this.http.post(url,this.size);
   }
   
   postUser(name:string,email:string,password:string){
     this.user = {"name":name,"email":email,"password":password};
-    const url = `http://localhost:3000/users`;
+    const url = `https://calm-mountain-38787.herokuapp.com/users`;
     return this.http.post(url,this.user);
   }
 
 
   deletePizza(index:number){
-    const url = `http://localhost:3000/pizzas/${index}`;
+    const url = `https://calm-mountain-38787.herokuapp.com/pizzas/${index}`;
     return this.http.delete(url);
   }
 
   deleteShape(index:number){
-    const url = `http://localhost:3000/shapes/${index}`;
+    const url = `https://calm-mountain-38787.herokuapp.com/shapes/${index}`;
     return this.http.delete(url);
   }
 
 
   deleteSauce(index:number){
-    const url = `http://localhost:3000/sauces/${index}`;
+    const url = `https://calm-mountain-38787.herokuapp.com/sauces/${index}`;
     return this.http.delete(url);
   }
 
   deleteFlavor(index:number){
-    const url = `http://localhost:3000/flavor/${index}`;
+    const url = `https://calm-mountain-38787.herokuapp.com/flavor/${index}`;
     return this.http.delete(url);
   }
 
   deleteSize(index:number){
-    const url = `http://localhost:3000/sizes/${index}`;
+    const url = `https://calm-mountain-38787.herokuapp.com/sizes/${index}`;
     return this.http.delete(url);
   }
 
 
   deleteUser(index:number){
-    const url = `http://localhost:3000/users/${index}`;
+    const url = `https://calm-mountain-38787.herokuapp.com/users/${index}`;
     return this.http.delete(url);
   }
 
 
   getPizza(){
-    return this.getQuery('pizzas.json');
+    return this.getQuery('pizzas');
   }
 
   getShape(){
-    return this.getQuery('shapes.json');
+    return this.getQuery('shapes');
   }
 
   getSauce(){
-    return this.getQuery('sauces.json');
+    return this.getQuery('sauces');
   }
 
   getFlavor(){
-    return this.getQuery('flavors.json');
+    return this.getQuery('flavors');
   }
   
   getSize(){
-    return this.getQuery('sizes.json');
+    return this.getQuery('sizes');
   }
 
   getUser(){
